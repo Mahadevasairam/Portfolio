@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- bg-[#202020] -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
+      integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#202020] text-white m-5 xl:m-25 lg:m-10 md:m-8">
+    <section>
+      <div class="flex justify-between flex-col lg:flex-row">
+        <div class="flex font-semibold justify-between">
+          <a href="#" class="p-2 text-xl">&lt;Mahadev/&gt;</a>
+          <div class="flex">
+            <button onclick="menu()">
+              <i
+                id="menu"
+                class="fa-solid fa-bars text-white p-3 flex lg:hidden"
+              ></i>
+            </button>
+            <button onclick="wrong()">
+              <i
+                id="wrong"
+                class="fa-solid fa-xmark text-white p-3 hidden lg:hidden"
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="navbar"
+          class="gap-5 font-semibold flex-col hidden mt-5 md:flex md:flex-row"
+        >
+          <a
+            href="#about"
+            class="p-2 hover:bg-white hover:text-black transition ease-in duration-500"
+            >&lt;About&gt;</a
+          >
+          <a
+            href="#skills"
+            class="p-2 hover:bg-white hover:text-black transition ease-in duration-500"
+            >&lt;Skills&gt;</a
+          >
+          <a
+            href="#projects"
+            class="p-2 hover:bg-white hover:text-black transition ease-in duration-500"
+            >&lt;Projects/&gt;</a
+          >
+          <a
+            href="#contact"
+            class="p-2 hover:bg-white hover:text-black transition ease-in duration-500"
+            >&lt;Contact/&gt;</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="grid grid-cols-1 gap-10 mt-20 md:grid-cols-2">
+        <div class="">
+          <h1 class="font-black text-5xl lg:text-7xl">Hi There!</h1>
+          <h1 class="font-black text-5xl lg:text-7xl">I am</h1>
+          <h1
+            class="mt-2 text-cyan-400 font-black text-6xl lg:text-8xl hover:cursor-pointer"
+          >
+            Mahadev
+          </h1>
+          <h1 class="mt-3 text-gray-300 font-semibold">
+            I'm from India. It's been 2 years that I'm Coding and has learnt so
+            many things. I like to collaborate with Developers for learning new
+            things from them.
+          </h1>
+          <br />
+          <a
+            href="#"
+            class="text-black p-3 rounded-lg bg-white hover:font-semibold"
+          >
+            Resume
+          </a>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <img class="h-80" src="../assests/picture.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="mt-10 text-white">
+        <h1 class="font-bold text-3xl mb-3">Skills</h1>
+        <div class="bg-white h-0.5 rounded-lg"></div>
+      </div>
+      <div class="grid justify-items-center cursor-pointer mt-10">
+        <div
+          class="grid gap-10 font-semibold text-black grid-cols-2 md:grid-cols-4 lg:grid-cols-7"
+        >
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-html-5.svg" alt="" />
+            <h1 class="text-center">HTML5</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-css3.svg" alt="" />
+            <h1 class="text-center">CSS3</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-java.svg" alt="" />
+            <h1 class="text-center">Java</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-python.svg" alt="" />
+            <h1 class="text-center">Python</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-salesforce.svg" alt="" />
+            <h1 class="text-center">Salesforce</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-tailwindcss.svg" alt="" />
+            <h1 class="text-center">TailwindCSS</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-javascript.svg" alt="" />
+            <h1 class="text-center">JavaScript</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/linux-svgrepo-com.svg" alt="" />
+            <h1 class="text-center">Linux</h1>
+          </div>
+          <div class="p-3 rounded-lg bg-white">
+            <img class="h-20" src="../assests/icons8-azure.svg" />
+            <h1 class="text-center">Azure</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="mt-10">
+        <h1 class="font-bold text-3xl mb-3">Projects</h1>
+        <div class="bg-white h-0.5 rounded-lg"></div>
+      </div>
+      <div class="grid gap-10 mt-10 grid-cols-1 lg:grid-cols-2">
+        <div
+          class="bg-gray-200 p-5 w-full rounded-xl drop-shadow-lg cursor-pointer hover:bg-white"
+        >
+          <div>
+            <div class="">
+              <h1 class="text-black text-2xl font-bold">EZ-Park</h1>
+              <p class="text-black">
+                Designed this website for computerized vehicle parking
+              </p>
+              <p class="text-black">
+                It is used to entry the Vehcile In and out with their Timestamp.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-5 text-center mt-5 sm:grid-cols-4">
+              <span class="bg-orange-600 p-2 rounded-md">HTML</span>
+              <span class="bg-cyan-500 p-2 rounded-md">TailwindCSS</span>
+              <span class="bg-sky-600 p-2 rounded-md">PHP</span>
+              <span class="bg-yellow-500 p-2 rounded-md">JavaScript</span>
+            </div>
+            <div class="mt-8">
+              <a href="" class="p-2 bg-black rounded-md">Source</a>
+              <a href="" class="p-2 bg-black rounded-md">Website</a>
+            </div>
+          </div>
+          <div class="mt-5">
+            <img
+              class="w-full rounded-lg"
+              src="../assests/EZ thumbnail.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
